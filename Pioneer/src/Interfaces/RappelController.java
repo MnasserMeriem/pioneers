@@ -25,11 +25,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class RappelController implements Initializable {
-
-    @FXML
-    private TextField nom;
-    @FXML
-    private TextField prenom;
+    private String cin="11121111";
     @FXML
     private TextField info;
     @FXML
@@ -47,10 +43,10 @@ public class RappelController implements Initializable {
     private void ajoutRappel(ActionEvent event) {
                 try {
             ServiceRappel es = new ServiceRappel();
-            es.ajouter(new Rappel(nom.getText(),prenom.getText(),info.getText()));
+            es.ajouter(new Rappel(cin,info.getText()));
             JOptionPane.showMessageDialog(null,"rappel ajoutée");
         } catch (SQLException ex) {
-            Logger.getLogger(ReclamationController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RappelController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

@@ -28,6 +28,7 @@ import javax.swing.JOptionPane;
  */
 public class ReclamationController implements Initializable {
 
+    private String cin="11121111";
     @FXML
     private TextField rec;
     @FXML
@@ -49,11 +50,18 @@ public class ReclamationController implements Initializable {
         imgR.setImage(new Image("/images/reclamation.png"));
         // TODO
     }    
+    
+    public void SetCin(String cin)
+    {
+        this.cin=cin;
+    }
+    
+    
      @FXML
   public void AjouterReclamation(ActionEvent event)  { 
         try {
             ServiceReclamation es = new ServiceReclamation();
-            es.ajouter(new Reclamation(nom.getText(),prenom.getText(),rec.getText()));
+            es.ajouter(new Reclamation(cin,rec.getText()));
             JOptionPane.showMessageDialog(null,"reclamation ajoutée");
         } catch (SQLException ex) {
             Logger.getLogger(ReclamationController.class.getName()).log(Level.SEVERE, null, ex);

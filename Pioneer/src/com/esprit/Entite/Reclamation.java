@@ -15,15 +15,42 @@ import java.sql.Date;
  */
 public class Reclamation {
     private String date;
-    private String nom;
+    private String cin;
     private String prenom;
     private String Text;
+    private String nom;
+
+    @Override
+    public String toString() {
+        return "Reclamation{" + "date=" + date + ", prenom=" + prenom + ", Text=" + Text + ", nom=" + nom + '}';
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getCin() {
+        return cin;
+    }
+
+    public void setCin(String cin) {
+        this.cin = cin;
+    }
 
     public Reclamation(String date, String nom, String prenom,String Text) {
-        this.nom = nom;
         this.prenom = prenom;
         this.Text = Text;
+        this.nom = nom;
         this.date=date;
+    }
+
+    public Reclamation(String cin, String Text) {
+        this.cin = cin;
+        this.Text = Text;
     }
     
     public Reclamation( String nom, String prenom,String Text) {
@@ -41,25 +68,10 @@ public class Reclamation {
           this.date = date;
     }
 
-    @Override
-    public String toString() {
-        return "Reclamation{" + "nom=" + nom + ", prenom=" + prenom + ", Text=" + Text + '}';
-    }
-    
-
-  
-
    
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public String getPrenom() {
+    
+ 
+     public String getPrenom() {
         return prenom;
     }
 

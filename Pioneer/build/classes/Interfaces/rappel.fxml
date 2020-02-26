@@ -7,11 +7,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.RappelController">
    <children>
-      <TextField fx:id="nom" layoutX="87.0" layoutY="86.0" />
-      <TextField fx:id="prenom" layoutX="355.0" layoutY="86.0" />
       <TextField fx:id="info" layoutX="87.0" layoutY="176.0" prefHeight="76.0" prefWidth="463.0" />
-      <Label layoutX="35.0" layoutY="90.0" text="nom" />
-      <Label layoutX="291.0" layoutY="90.0" text="prenom" />
       <Label layoutX="17.0" layoutY="176.0" text="information" />
       <Button fx:id="ajout" layoutX="274.0" layoutY="301.0" mnemonicParsing="false" onAction="#ajoutRappel" text="Button" />
    </children>

@@ -11,9 +11,31 @@ package com.esprit.Entite;
  */
 public class Rappel {
      private String date;
+
+    public Rappel(String cin, String Text) {
+        this.Text = Text;
+        this.cin = cin;
+    }
     private String nom;
     private String prenom;
     private String Text;
+    private String cin;
+
+    public Rappel(String date, String nom, String prenom, String Text, String cin) {
+        this.date = date;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.Text = Text;
+        this.cin = cin;
+    }
+
+    public String getCin() {
+        return cin;
+    }
+
+    public void setCin(String cin) {
+        this.cin = cin;
+    }
 
     public Rappel(String nom, String prenom, String Text) {
         this.nom = nom;

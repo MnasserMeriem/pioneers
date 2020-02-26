@@ -31,7 +31,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
  * @author User
  */
 public class ArecController implements Initializable {
-
+    private String cin="11121111";
     @FXML
     private TableView<Reclamation> TableRec;
     @FXML
