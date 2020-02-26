@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.ReclamationController">
+   <children>
+      <ImageView fx:id="imgR" blendMode="MULTIPLY" disable="true" fitHeight="400.0" fitWidth="600.0" layoutX="2.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../reclamation.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="49.0" prefHeight="30.0" prefWidth="228.0" text="Nouvelle réclamation">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rec" layoutX="131.0" layoutY="186.0" opacity="0.88" prefHeight="111.0" prefWidth="399.0" promptText="Taper ici votre réclamation..." />
+      <Label layoutX="29.0" layoutY="200.0" text="Réclamation" textFill="#2f2f2f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="envoyer" layoutX="271.0" layoutY="310.0" mnemonicParsing="false" onAction="#AjouterReclamation" opacity="0.72" text="Envoyer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="305.0" layoutY="121.0" text="Prénom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="113.0" prefHeight="35.0" prefWidth="69.0" text="Nom" textFill="#141413">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="131.0" layoutY="118.0" opacity="0.88" />
+      <TextField fx:id="prenom" layoutX="410.0" layoutY="119.0" opacity="0.87">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
